@@ -1,0 +1,17 @@
+#Se requiere cambiar los directorio por los que se usarán en el proyecto
+# /home/ale/Escritorio/proyecto
+# Se requiere cambiar el nombre del usuario por el que se creo para el proyecto
+
+[Unit]
+Description=Gunicorn instance to serve app Flask app
+After=network.target
+
+[Service]
+User=ale
+Group=www-data
+WorkingDirectory=/home/ale/Escritorio/proyecto
+Environment="PATH=/home/ale/Escritorio/proyecto/myenv/bin"
+ExecStart=/home/ale/Escritorio/proyecto/myenv/bin/gunicorn --workers 3 --bind unix:project.sock -m 007 wsgi:app
+
+[Install]
+WantedBy=multi-user.target
