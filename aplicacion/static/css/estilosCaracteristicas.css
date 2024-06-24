@@ -1,0 +1,50 @@
+
+/* Contenedor del apartado caracteristicas */
+#content-caracteristicas{
+	padding: 19px;
+}
+
+/* MAPAS DE CALOR */
+/* Titulo de mapas de calor en el parametro X*/
+.title-mapCalor{
+    margin-top: 29px;
+    margin-bottom: 18px;
+}
+
+/* mapas edu*/
+.mapCalorEdu {
+    display: block;
+    margin: 0 auto;
+	width: 90%;
+}
+
+/* mapas emp*/
+.mapCalorEmp {
+    display: block;
+    margin: 0 auto;
+	width: 100%;
+}
+
+
+/* GRAFICAS DE BARRA */
+/* Titulo de 'parametro X' */
+.title-caracteristicas{
+    margin-top: 29px;
+}
+
+/* Titulo de 'Grupo N' */
+.title-Grupos{
+	font-size: 15px;
+	font-family: Verdana, Arial;
+	word-spacing: 3px;
+    margin-bottom: 11px;
+    margin-top: 17px;
+    font-weight: bold;
+}
+
+/* Graficas de barras con las caracteristicas */
+.grafCaractGrupos{
+    display: block;
+    margin: 0 auto;
+	width: 90%;
+}
